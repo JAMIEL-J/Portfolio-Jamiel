@@ -24,14 +24,20 @@ export default function Contact() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!formData.name || !formData.email || !formData.message) return;
+    
     setStatus("loading");
     
-    // Simulate API request send
+    // Construct mailto link
+    const subject = encodeURIComponent(formData.subject || `New message from ${formData.name}`);
+    const body = encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`);
+    
+    window.location.href = `mailto:jamieljahirhussain@gmail.com?subject=${subject}&body=${body}`;
+    
     setTimeout(() => {
       setStatus("success");
       setFormData({ name: "", email: "", subject: "", message: "" });
-      setTimeout(() => setStatus("idle"), 5000);
-    }, 1500);
+      setTimeout(() => setStatus("idle"), 3000);
+    }, 500);
   };
 
   const handleDownload = (filename: string) => {
@@ -62,14 +68,14 @@ export default function Contact() {
           <div id="resume" className="lg:col-span-5 space-y-8">
             <div className="space-y-4">
               <h3 className="font-cinzel text-xl text-coffee-dark font-bold">
-                ATS-Optimized Resumes
+                Professional Documentation
               </h3>
               <p className="font-instrument text-base text-coffee-medium/90 leading-relaxed">
-                Download LaTeX-formatted, single-page ATS-compliant resumes tailored specifically for different career paths.
+                Review a comprehensive overview of my technical experience, analytical skills, and delivered project outcomes.
               </p>
             </div>
 
-            {/* LaTeX Variants List */}
+            {/* Resume File */}
             <div className="flex flex-col gap-4">
               {resumeVariants.map((res) => (
                 <button
