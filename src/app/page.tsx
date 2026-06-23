@@ -139,15 +139,43 @@ export default function Home() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-coffee-dark text-[#fffdd0]/90 py-12 px-6 md:px-12 lg:px-24 border-t border-[#fffdd0]/5">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 font-mono text-xs uppercase tracking-wider text-[#fffdd0]/50">
-          <div>
-            <p className="font-cinzel font-semibold text-[#fffdd0] mb-1.5">Jamiel J</p>
-            <p>Data Analyst & AI Systems Builder</p>
-          </div>
-          <div className="text-center md:text-right">
-            <p>© 2026 Jamiel J. All rights reserved.</p>
-            <p className="mt-1 text-[10px]">Built with Next.js & Framer Motion</p>
+      <footer className="bg-coffee-dark text-[#fffdd0]/90 pt-20 pb-12 px-6 md:px-12 lg:px-24 border-t border-[#fffdd0]/10 overflow-hidden relative">
+        <div className="max-w-7xl mx-auto relative z-10 flex flex-col items-center">
+          
+          {/* Big Typography Reveal */}
+          <motion.div 
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-50px" }}
+            className="w-full text-center overflow-hidden pb-12"
+          >
+            <motion.h2 
+              variants={{
+                hidden: { opacity: 0, y: "100%", scale: 0.9, rotateX: 20 },
+                visible: { 
+                  opacity: 1, 
+                  y: 0, 
+                  scale: 1, 
+                  rotateX: 0,
+                  transition: { duration: 0.5, ease: "easeOut" } 
+                }
+              }}
+              className="font-cinzel text-[15vw] sm:text-[18vw] leading-none font-bold text-[#fffdd0] whitespace-nowrap tracking-tight select-none origin-bottom cursor-default"
+            >
+              JAMIEL J
+            </motion.h2>
+          </motion.div>
+
+          {/* Standard Footer Info */}
+          <div className="w-full flex flex-col md:flex-row items-center justify-between gap-6 font-mono text-xs uppercase tracking-wider text-[#fffdd0]/40 pt-8 border-t border-[#fffdd0]/10">
+            <div className="text-center md:text-left space-y-1">
+              <p className="text-[#fffdd0]/80">Data Analyst & AI Systems Builder</p>
+              <p>Tiruchirappalli, TN, India</p>
+            </div>
+            <div className="text-center md:text-right space-y-1">
+              <p>© 2026 Jamiel J. All rights reserved.</p>
+              <p className="text-[10px]">Built with Next.js & Framer Motion</p>
+            </div>
           </div>
         </div>
       </footer>
