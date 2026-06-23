@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=3A2D28&height=250&section=header&text=Jamiel%20J&fontSize=80&fontColor=fffdd0&animation=fadeIn&fontAlignY=35&desc=Data%20Analyst%20&%20Systems%20Engineer&descAlignY=55&descAlign=50" width="100%" alt="Header" />
 
-## Getting Started
+  <br />
 
-First, run the development server:
+  <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js" />
+  <img src="https://img.shields.io/badge/React%2019-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind" />
+  <img src="https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white" alt="Framer Motion" />
+  <img src="https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" alt="Python" />
+  <img src="https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=tableau&logoColor=white" alt="Tableau" />
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+  <h2 align="center">Interactive Portfolio Architecture</h2>
+  <p align="center"><strong>A premium, highly disciplined frontend experience showcasing data pipelines, predictive models, and full-stack analytics platforms.</strong></p>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+  <p align="center">
+    <a href="#-design-philosophy">Design Philosophy</a> •
+    <a href="#-technical-stack">Tech Stack</a> •
+    <a href="#-flagship-projects">Projects</a> •
+    <a href="#-core-milestones">Milestones</a>
+  </p>
+</div>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🏛️ Design Philosophy
 
-## Learn More
+This portfolio abandons the "generic developer dashboard" aesthetic in favor of a strictly disciplined **editorial/premium** design system:
+- **Design Restraint**: Guided by strict typographic rules (Cinzel for display, Instrument Serif for body quotes) with constrained, motivated animations via Framer Motion.
+- **Espresso Palette**: Built on a bespoke color palette (`#fffdd0` cream backgrounds paired with varying shades of deep espresso `#2C1E16`) to provide a grounded, physical feel.
+- **Interactive Depth**: Employs glassy overlays, radial gradients, and carefully stacked z-index layers to provide physical tactility without overwhelming the content.
 
-To learn more about Next.js, take a look at the following resources:
+## 🛠️ Technical Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Framework**: Next.js 15 (App Router)
+- **Library**: React 19
+- **Styling**: Tailwind CSS (Custom config targeting strict typography and color tokens)
+- **Animation**: Framer Motion
+- **Icons**: Phosphor Icons
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📈 Flagship Projects
 
-## Deploy on Vercel
+| Project | Description | Stack | Link |
+|---------|-------------|-------|------|
+| **Vizzy Analytics** | A full-stack AI-driven analytics engine featuring NL2SQL, automated statistical correlations, and DuckDB-first ingestion. | `Python` `DuckDB` `Next.js` `FastAPI` | [GitHub](https://github.com/JAMIEL-J/Vizzy-Analytics) / [Live](https://vizzy-ai-dqgw.vercel.app/) |
+| **Customer Churn Prediction** | Business-aware ML system maximizing retention ROI via strategic threshold optimization. Evaluated 14 business hypotheses. | `Python` `Scikit-Learn` `Streamlit` | [GitHub](https://github.com/JAMIEL-J/Customer-Churn-Prediction) / [Live](https://customer-churn-predictionss.streamlit.app/) |
+| **DNA Desktop Assistant** | Local-first, privacy-respecting LLM desktop assistant bridging voice and system APIs. | `Python` `Next.js` `Electron` | [GitHub](https://github.com/JAMIEL-J/DNA-Desktop-Assistant-) |
+| **Revenue Leakage Detection** | E-commerce conversion funnel analysis using BigQuery GA4 data to pinpoint user drop-offs. | `SQL` `Tableau` `Python` | [GitHub](https://github.com/JAMIEL-J/Conversion-Funnel-Analysis) |
+| **Sales Territory Optimization** | ETL pipeline + interactive dashboards identifying localized revenue concentration and expansion targets. | `MySQL` `Tableau` | [GitHub](https://github.com/JAMIEL-J/Retail-Analytics) |
+| **Demand Forecasting** | XGBoost/SARIMAX ensemble model for inventory optimization and retail supply chain support. | `Python` `XGBoost` `Streamlit` | [GitHub](https://github.com/JAMIEL-J/Demand-Forecasting) / [Live](https://demand-forecasting-and-inventory-optimization.streamlit.app/) |
+| **SLA & Support Analytics** | Customer support ticket performance analysis tracking SLA breaches and satisfaction drivers. | `Excel` `PowerQuery` | [GitHub](https://github.com/JAMIEL-J/Customer-Support-SLA-Satisfaction-Analysis-Using-Excel) |
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🏆 Core Milestones Delivered
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **$106K Churn Retention ROI**: Built a business-aware churn prediction system evaluating 14 hypotheses and 24 engineered features for value-based segment targeting.
+- **104ms p95 Latency on 1M Rows**: Achieved blazing fast data retrieval in the Vizzy platform using DuckDB, operating 3.34x faster than Pandas.
+- **$1.14M Revenue Leakage Identified**: Found in conversion funnel using SQL & Tableau on Google's public GA4 e-commerce BigQuery dataset.
+- **31.7% Forecasting Improvement**: Beaten baseline accuracy using an ensemble of XGBoost, Prophet, and SARIMAX.
+
+---
+
+<div align="center">
+  <p><i>"SQL, dashboards, and forecasting that find money other people miss."</i></p>
+  <a href="https://www.linkedin.com/in/jamiel-j-856ab9329/">LinkedIn</a> • <a href="mailto:jamieljahirhussain@gmail.com">Email</a>
+</div>
