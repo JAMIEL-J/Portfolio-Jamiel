@@ -60,7 +60,7 @@ export default function Experience() {
                 <span className="w-1.5 h-1.5 rounded-full bg-coffee-light/30" />
                 <span className="flex items-center gap-1">
                   <MapPin className="w-4 h-4" />
-                  Remote / Hybrid
+                  Onsite
                 </span>
               </div>
             </div>
