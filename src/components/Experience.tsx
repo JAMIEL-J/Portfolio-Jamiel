@@ -43,14 +43,14 @@ export default function Experience() {
                   Internship
                 </span>
                 <h3 className="font-cinzel text-2xl text-coffee-dark font-semibold">
-                  Data Analyst Intern
+                  Data Analyst Trainee
                 </h3>
               </div>
               
               <div className="flex flex-wrap items-center gap-4 text-sm font-mono text-coffee-medium">
                 <span className="flex items-center gap-1">
                   <Briefcase className="w-4 h-4" />
-                  BY8LABS AI
+                  BY8LABS AI Private Limited · Full-time
                 </span>
                 <span className="w-1.5 h-1.5 rounded-full bg-coffee-light/30" />
                 <span className="flex items-center gap-1">
@@ -60,7 +60,7 @@ export default function Experience() {
                 <span className="w-1.5 h-1.5 rounded-full bg-coffee-light/30" />
                 <span className="flex items-center gap-1">
                   <MapPin className="w-4 h-4" />
-                  Onsite
+                  Pudukkottai, TN · On-site
                 </span>
               </div>
             </div>
@@ -78,7 +78,7 @@ export default function Experience() {
                   </div>
                   <div>
                     <p className="font-instrument text-lg text-coffee-medium/95 leading-relaxed">
-                      <strong>Streamlit KPI Dashboarding:</strong> Designed and deployed stakeholder-facing interactive analytical tools mapping product performance metrics and business objectives.
+                      <strong>Python EDA and Validation:</strong> Gained working proficiency in Python, including Pandas and NumPy, through structured data science training focused on exploratory data analysis workflows and data validation techniques.
                     </p>
                   </div>
                 </li>
@@ -89,18 +89,7 @@ export default function Experience() {
                   </div>
                   <div>
                     <p className="font-instrument text-lg text-coffee-medium/95 leading-relaxed">
-                      <strong>EDA Pipelines:</strong> Formulated exploratory data analysis models to capture quality issues, distributions, and outliers before raw datasets hit downstream predictive systems.
-                    </p>
-                  </div>
-                </li>
-
-                <li className="flex gap-3">
-                  <div className="w-6 h-6 rounded-full bg-coffee-dark/5 flex items-center justify-center text-coffee-dark shrink-0 mt-0.5">
-                    <Checks className="w-3.5 h-3.5" />
-                  </div>
-                  <div>
-                    <p className="font-instrument text-lg text-coffee-medium/95 leading-relaxed">
-                      <strong>Data Validation Workflows:</strong> Built custom ingestion filters and checks designed to quarantine contaminated, anomalous, or malformed data files at ingestion points.
+                      <strong>Streamlit Dashboards:</strong> Built foundational Streamlit dashboards to visualise KPI metrics, developing practical understanding of end-to-end data-to-dashboard delivery pipelines.
                     </p>
                   </div>
                 </li>
