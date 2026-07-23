@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://portfolio-jamiel.vercel.app/sitemap.xml
+Sitemap: https://portfolio-jamiel.vercel.app/sitemap-index.xml
