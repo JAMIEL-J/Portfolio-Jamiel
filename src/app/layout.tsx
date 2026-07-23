@@ -39,6 +39,9 @@ export default function RootLayout({
       lang="en"
       className={`${cinzel.variable} ${instrument.variable} ${geistMono.variable} h-full antialiased`}
     >
+      <head>
+        <meta name="google-site-verification" content="googledf03a7f773d041b0" />
+      </head>
       <body className="min-h-full flex flex-col bg-beige-bg text-coffee-dark font-sans selection:bg-coffee-medium selection:text-beige-bg">
         {children}
       </body>
